@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest-like Hero Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
 
+    /* Hero container */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 80px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+
+    /* Text section inside hero */
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Explore Now button */
+    .hero-text a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #e60023;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+
+    .hero-text a:hover {
+      background-color: #b5001a;
+    }
+
+    /* Hero image */
+    .hero img {
+      width: 45%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text, .hero img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .hero img {
+        margin-top: 30px;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="hero">
+    <!-- Text Section -->
+    <div class="hero-text">
+      <h1>Discover Amazing Ideas</h1>
+      <p>Explore millions of ideas for home, style, recipes, and more. Get inspired and start creating your own collection today!</p>
+      <a href="#">Explore Now</a>
+    </div>
+
+    <!-- Hero Image -->
+    <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVybyUyMHJlZmVyZW5jZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=400" alt="Hero Image">
+  </div>
 
 </body>
-
 </html>
